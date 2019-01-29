@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    background-color: rgb(223, 141, 48);
+}
+#box {
+    position: absolute;
+    background-color: cadetblue;
+    width: 300px;
+    height: 300px;
+    left: 250px; /* 0~250 */
+    top: 350px;
+}
+#circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 250px;
+    /* left: 100px; */
+    background-image: url(cpu.svg);
+    background-repeat: no-repeat; 
+    /* transition-duration: 3s; */
+    /* transition-timing-function: linear; */
+}
