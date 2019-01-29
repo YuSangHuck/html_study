@@ -12,6 +12,11 @@ var motion = function (interval) {
             increasement = -1;
 
         circle.style.left = (increasement + parseInt(circle.style.left)) + 'px';
+        // angle = (180/PI)*left/radius
+        angle = parseInt((180 / Math.PI) * parseInt(circle.style.left) / 25);
+        circle.style.transform = "rotateZ(" + angle + "deg)";
+        // console.log("rotateZ(" + angle + "deg)");
+        // console.log(angle);
         // console.log(circle);
     }, interval);
 };
